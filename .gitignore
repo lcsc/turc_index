@@ -1,0 +1,81 @@
+# Ignore lintr configuration file
+.lintr
+
+# Ignore all files in the outputs directory except .gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Ignore all files in the preprocessing/AWC_data directory except .gitkeep
+preprocessing/AWC_data/*
+!preprocessing/AWC_data/awc.nc
+
+# Ignore all files in the preprocessing/ERA5_land_data directory except .gitkeep
+preprocessing/ERA5_land_data/data/*
+!preprocessing/ERA5_land_data/data/.gitkeep
+preprocessing/ERA5_land_data/update_data/*
+!preprocessing/ERA5_land_data/update_data/.gitkeep
+
+# Ignore all .tif and .nc
+*.tif
+*.nc
+!preprocessing/AWC_data/awc.nc
+
+# Ignore temporary files, R project user files, and compressed archives
+*.tmp
+*.Rproj.user
+*.zip
+*.rar
+*.txt
+
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+.cdsapirc

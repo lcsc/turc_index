@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research, please cite it as below."
+title: "Turc Index Database"
+authors:
+  - family-names: "Franquesa"
+    given-names: "Magí"
+    orcid: "0000-0003-3101-0394"
+  - family-names: "Reig"
+    given-names: "Fergus"
+    orcid: "0000-0002-9482-1170"
+version: "1.0.0"
+date-released: "2025-01-07"
+doi: "10.xxxx/zenodo.xxxx"
+url: "https://github.com/lcsc/turc_index"
