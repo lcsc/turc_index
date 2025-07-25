@@ -55,7 +55,7 @@ cdo -L -f nc -setname,tmean -setunit,"Celsius" -subc,273.15 "$BASE_DIR/t2m_${pre
 # Process minimum temperature
 echo "Processing minimum temperature..."
 cdo -L -f nc -setname,tmin -setunit,"Celsius" -subc,273.15 -monmin "$BASE_DIR/t2mhourly_${pre_start_year}_${end_year}.grib" "$BASE_DIR/tmin_bnds_${pre_start_year}_${end_year}.nc"
-ncks -C -x -v time_bnds "$BASE_DIR/tmin_bnds_${pre_start_year}_${end_year}.nc" -o "$BASE_DIR/tmin_${pre_start_year}_${end_year}.nc"
+ncks -O -C -x -v time_bnds "$BASE_DIR/tmin_bnds_${pre_start_year}_${end_year}.nc" -o "$BASE_DIR/tmin_${pre_start_year}_${end_year}.nc"
 rm "$BASE_DIR/tmin_bnds_${pre_start_year}_${end_year}.nc"
 
 # Process relative humidity

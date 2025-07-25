@@ -96,7 +96,7 @@ Ensure that you replace `/path/to/local/repo` with the absolute path where you c
 Before running the scripts, make sure they have execution permissions:
 
 ```bash
-chmod +x generate_turc_db.sh update_turc_db.sh
+chmod +x scripts/processing/generate_turc_db.sh scripts/update/update_turc_db.sh
 ```
 
 ### Running the Docker Container
