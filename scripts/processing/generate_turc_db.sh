@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Activate Python env
+source ~/turc_index_web_env/bin/activate
+
 # Check if the script received exactly two arguments
 if [ "$#" -eq 2 ]; then
   # Assign command-line arguments to variables
